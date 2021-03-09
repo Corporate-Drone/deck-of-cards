@@ -44,6 +44,7 @@ class CardStack extends Component {
 
 
     render() {
+        //pass image data to render card
         const cards = this.state.cards.map(card => (
             <Card key={card.code} image={card.image} alt={card.suit} />
         ))
